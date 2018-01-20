@@ -7,3 +7,4 @@ Demo : https://qvil.github.io/vue-todo-list/
 - Not showing dev tools vue panel
   >1. If you using CDN **not using min.js**
   >1. then Add this code `Vue.config.devtools = true;`
+  >1. **해결함 https://cdn.jsdelivr.net/npm/vue 에서 https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js로 바꾸니까 잘 됨!**

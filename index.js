@@ -1,10 +1,11 @@
+// Vue.config.devtools = true;
 
 Vue.component("todo-item", {
   template: "\
     <li>\
       {{ title }}\
       <button v-on:click=\"$emit(\'remove\')\">X</button>\
-    </li>/\
+    </li>\
   ",
   props: ['title']
 });
@@ -39,5 +40,3 @@ new Vue({
     }
   }
 })
-Vue.config.devtools = true;
-console.log(Vue.config);
