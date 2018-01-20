@@ -1,4 +1,3 @@
-Vue.config.devtools = true;
 
 Vue.component("todo-item", {
   template: "\
@@ -40,3 +39,5 @@ new Vue({
     }
   }
 })
+Vue.config.devtools = true;
+console.log(Vue.config);
