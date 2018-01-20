@@ -1,9 +1,24 @@
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
 
 <body>
-    <div id="app">
-        {{ msg }}
-    </div>
-    <!-- Load Javscript -->
-    <script src="./index.js"></script>
+  <div id="todo-list-example">
+    <input
+      v-model="newTodoText"
+      v-on:keyup.enter="addNewTodo"
+      placeholder="Add a todo"
+    >
+    <ul>
+      <li
+        is="todo-item"
+        v-for="(todo, index) in todos"
+        v-bind:key="todo.id"
+        v-bind:title="todo.title"
+        v-on:remove="todos.splice(index, 1)"
+      >
+      </li>
+    </ul>
+  </div>
+  <!-- Load Javscript -->
+  <script src="./index.js"></script>
 </body>
